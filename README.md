@@ -1,4 +1,4 @@
-# 🎨 Personal Portfolio Website
+# 🎨 Andy's Personal Portfolio Website
 
 A modern, responsive portfolio built with **React**, **Vite**, and **Tailwind CSS** — showcasing projects, skills, and contact information with elegant design and smooth interactions.
 
@@ -8,16 +8,13 @@ A modern, responsive portfolio built with **React**, **Vite**, and **Tailwind CS
 
 🌐 **Main URL**: [https://andys-website-fa2332f36d38.herokuapp.com](https://andys-website-fa2332f36d38.herokuapp.com)
 
-🔗 **Custom Domain**: [http://andyspersonalportfolio.com](http://andyspersonalportfolio.com)
-
 ## 🚀 Features
 
 - **🌓 Dark/Light Mode** – Toggle with persistent localStorage preference
-- **📱 Fully Responsive** – Mobile-first design with Tailwind breakpoints
-- **🎯 Project Showcase** – Filterable gallery with live demos & source code
+- **📱 Fully Responsive** – Web & Mobile flexible design with Tailwind conditional styling
+- **🎯 Project/Research Showcase** – Dynamic gallery of personal project and research papers with links to source codes and pdfs
 - **⚡ Fast Performance** – Vite bundling with optimized assets
-- **🎨 Modern UI** – Smooth transitions, hover effects, and glassmorphism
-- **🔍 SEO Ready** – Semantic HTML, meta tags, and Open Graph
+- **🎨 Modern UI** – Smooth transitions, hover effects, and theme toggling
 - **📞 Contact Integration** – Direct email, LinkedIn, and GitHub links
 
 ## 🛠️ Tech Stack
@@ -31,6 +28,6 @@ A modern, responsive portfolio built with **React**, **Vite**, and **Tailwind CS
 | **State Management** | React Context API |
 | **Deployment** | Heroku (with automatic deploys) |
 | **Version Control** | Git & GitHub |
-
+| **IDE** | VS Code |
 
 
