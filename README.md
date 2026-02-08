@@ -1,16 +1,36 @@
-# React + Vite
+# 🎨 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio built with **React**, **Vite**, and **Tailwind CSS** — showcasing projects, skills, and contact information with elegant design and smooth interactions.
 
-Currently, two official plugins are available:
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![React](https://img.shields.io/badge/React-19.0-blue) ![Vite](https://img.shields.io/badge/Vite-7.0-purple) ![Tailwind](https://img.shields.io/badge/Tailwind-4.0-38B2AC)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Live Demo
 
-## React Compiler
+🌐 **Main URL**: [https://andys-website-fa2332f36d38.herokuapp.com](https://andys-website-fa2332f36d38.herokuapp.com)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Custom Domain**: [http://andyspersonalportfolio.com](http://andyspersonalportfolio.com)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **🌓 Dark/Light Mode** – Toggle with persistent localStorage preference
+- **📱 Fully Responsive** – Mobile-first design with Tailwind breakpoints
+- **🎯 Project Showcase** – Filterable gallery with live demos & source code
+- **⚡ Fast Performance** – Vite bundling with optimized assets
+- **🎨 Modern UI** – Smooth transitions, hover effects, and glassmorphism
+- **🔍 SEO Ready** – Semantic HTML, meta tags, and Open Graph
+- **📞 Contact Integration** – Direct email, LinkedIn, and GitHub links
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| **Frontend** | React 19, Vite, JavaScript (ES6+) |
+| **Styling** | Tailwind CSS, CSS Modules |
+| **Icons** | Lucide React |
+| **Routing** | React Router DOM |
+| **State Management** | React Context API |
+| **Deployment** | Heroku (with automatic deploys) |
+| **Version Control** | Git & GitHub |
+
+
+
