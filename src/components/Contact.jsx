@@ -4,7 +4,8 @@ import {Link} from "react-router-dom"
 export const Contact = () => {
     return (
         <section id="contact" className="relative py-24 px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-12">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-12"> */}
+            <div className="mx-auto max-w-5xl"> 
                 <div>
                     <h2 className="text-glow font-bold text-3xl md:text-4xl text-center mb-12">
                         <span className="text-primary"> Contact </span> Me
@@ -36,7 +37,7 @@ export const Contact = () => {
                     </div>
                 
                 </div>
-                <div>
+                {/* <div>
                     <h2 className="font-bold text-glow text-3xl md:text-4xl mb-12 text-center">
                         <span className="text-primary">Leave</span> Feedback
                     </h2>
@@ -48,7 +49,7 @@ export const Contact = () => {
                         </div>
                     </div>
                     
-                </div>
+                </div> */}
             </div>
         </section>
     )
