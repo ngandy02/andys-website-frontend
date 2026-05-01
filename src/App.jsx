@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import {useState, useEffect} from "react"
 
 function App() {
-.
+
   const [isDarkMode, setIsDarkMode] = useState(false)
     
   useEffect(() => {
