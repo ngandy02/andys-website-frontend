@@ -27,7 +27,7 @@ export const Projects = ({isDarkMode}) => {
                     
                     {projects.map((project, key) => {
                         return(
-                            <div key={key} className={cn("relative transition-colors  rounded-full rounded-lg bg-card shadow-xs p-6",
+                            <div key={key} className={cn("relative transition-colors rounded-full rounded-lg bg-card shadow-xs p-6",
                                 isDarkMode ? "card-hover-dark" : "card-hover"
                             )}> 
                                 <div className="p-8">
@@ -56,7 +56,7 @@ export const Projects = ({isDarkMode}) => {
                                     </label> }
                                     {project.githubURL2 &&
                                     <a href={project.githubURL2}>
-                                        <Github color="inidgo"/>
+                                        <Github color="indigo"/>
                                     </a>}
                                     
                                 </div>  

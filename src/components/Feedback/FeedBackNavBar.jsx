@@ -1,43 +1,32 @@
-import { cn } from "@/lib/utils"
-import { useState, useEffect} from "react"
-import { X, Menu } from "lucide-react"
+import { cn } from "../../lib/utils"
+import {useState, useEffect} from "react"
+import {X, Menu} from "lucide-react"
 
-// list of different links or options to select on website
-const navItems = [
-    {name: "Home", href: "#hero"},
-    {name: "About", href: "#about"},
-    {name: "Skills", href: "#skills"},
-    {name: "Papers", href: "#papers"},
-    {name: "Projects", href: "#projects"},
-    {name: "Contact", href: "#contact"},
-]
-
-
-export const Navbar = () => {
+export const FeedbackNavBar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const navItems = [
+        {name: "Form", href: "#form"},
+        {name: "Dashboard", href: "#dashboard"}
+    ]
 
-// this useEffect function runs once only when the component first mounts
-    // from the empty dependency array 
     useEffect(() => {
+        // created a callback function that runs when scroll event is detected 
         const handleScroll = () => {
-            // sets state to true when user scrolls more than 10px
             setIsScrolled(window.scrollY > 10)
         }
-        // adds scroll event listener when component mounts 
-        // handleScroll is the callback function that gets called when
-            // scroll event is detected 
+
+        // created event listener on component mount
         window.addEventListener("scroll", handleScroll)
-        // clean up function when this NavBar component unmounts
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
-    return(
-        <nav
-            className={cn(
-                "fixed w-full z-40 transition-all duration-300", 
-                isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
-            )}
-        >
+        return (() => window.removeEventListener("scroll", handleScroll))
+    }, []
+    )
+
+
+    return (
+        <nav className={cn("fixed w-full z-40 transition-all duration-300",
+            isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+        )}>
             <div className="container flex items-center justify-between">
                 <a className="text-xl font-bold text-primary flex items-center" href="/">
                     <span className="relative z-10">
@@ -45,22 +34,23 @@ export const Navbar = () => {
                     </span>
                 </a>
 
-                {/* desktop ver */}
-                <div className="hidden md:flex space-x-10">
-                    {navItems.map((item, key) => (
-                        <a key={key} href={item.href} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                {/* Desktop Version */}
+                <div
+                    className= "hidden md:flex space-x-10">
+                    {navItems.map((item, key) => 
+                        <a href={item.href} key={key} className="text-foreground/80 hover::text-primary transition-colors duration-300">
                             {item.name}
                         </a>
-                    ))}
+                    )}
                 </div>
 
-                {/* mobile ver */}
-                <button 
+                {/* Mobile Version */}
+                <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     className="md:hidden p-2 z-50 text-foreground"
                     aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
                 >
-                    {isMenuOpen? <X size={24}/> : <Menu size={24}/>}
+                    {isMenuOpen ? <X size={24} /> : <Menu size={24}/>}
                 </button>
                 <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
                     "transition-all duration-300 md:hidden",
@@ -81,7 +71,6 @@ export const Navbar = () => {
                     ))}
                     </div>
                 </div>
-                
             </div>
 
         </nav>
