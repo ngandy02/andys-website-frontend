@@ -3,7 +3,7 @@ import { StarBackground } from "@/components/StarBackground"
 // import { Navbar } from "@/components/Navbar"
 import { Form } from "@/components/Feedback/Form"
 import { FeedbackNavBar } from "../components/Feedback/FeedBackNavBar"
-import { Dashboard } from "../components/Feedback/Dashboard"
+import Dashboard from "../components/Feedback/Dashboard"
 // import { useState } from "react"
 
 // checklist:

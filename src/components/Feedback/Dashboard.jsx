@@ -25,8 +25,7 @@ function Dashboard() {
     const fetchData = async() => {
         try{
             const {data} = await axios.get(READ_ALL_FEEDBACKS)
-            submissions = objectToArray(data)
-            // setSubmissions(submissions)
+            setSubmissions(objectToArray(data))
             setError("")
             setSuccess("Successfully retrieved submissions!")
             console.log(success)
