@@ -15,6 +15,8 @@ export default defineConfig({
     host: true,
     allowedHosts: [
       "andys-website-fa2332f36d38.herokuapp.com", 
+      "andys-website.com", 
+      "www.andys-website.com",
       "localhost"
     ],
     port: process.env.PORT || 3000,
